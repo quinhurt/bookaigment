@@ -1,0 +1,16 @@
+.header{
+  height: 10em;
+  background-color: darkgreen;
+}
+
+footer{
+height:10em;
+background-color:yellow;
+
+}
+
+.book{
+  width:5em;
+  height:5em;
+  background-color:green;
+}
