@@ -1,6 +1,6 @@
 .header{
   height: 10em;
-  background-color: darkgreen;
+  background-color: green;
 }
 
 footer{
@@ -10,7 +10,9 @@ background-color:yellow;
 }
 
 .book{
-  width:5em;
-  height:5em;
-  background-color:green;
+display: flex;
+flex-wrap: nowrap;
+width: 300px;
+height: 200px;
+background-color: blue;
 }

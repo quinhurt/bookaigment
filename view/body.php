@@ -21,12 +21,14 @@ function get_products()
   $result = get_products();
 
  foreach ($result as $row):
-  echo $row['BookTitle'], $row['cover'];
- // echo $row['OriginalTitle'];
+  echo $row['BookTitle'];
+  echo $row['OriginalTitle'];
+   ?>
+<img src="<?php echo $row['Cover']; ?>"/>
+
+ //
 //  echo ;
-endforeach;
- ?><br>
+<?php endforeach; ?>
+
+ <br>
  </div>
-<?php
-//echo "<button type="button" name="update">update</button>";
- ?>
