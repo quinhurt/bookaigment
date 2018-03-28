@@ -3,9 +3,7 @@
 function get_products()
 {
   global $conn;
-  //query the database to select all data from the book table
   $sql = 'SELECT * FROM book';
-  //use a prepared statement to enhance security
   $statement = $conn->prepare($sql);
   $statement-> execute();
   $result = $statement-> fetchAll();
