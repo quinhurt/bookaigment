@@ -50,3 +50,41 @@ $result = $stmt->fetchAll();
  }
 
  ?>
+
+
+ <?php
+ /*
+ include 'modle/DB.php';
+
+
+ function{
+   $conn =dbConnect();
+   $sql = 'SELECT * FROM book';
+   $statement = $conn->prepare($sql);
+   $statement-> execute();
+   $result = $statement-> fetchAll();
+   $statement-> closeCursor();
+   return $result;
+  foreach ($result as $row):
+
+
+ }
+  ?>
+
+ <div class="book">
+
+
+   <?php
+
+ /*
+
+   echo $row['BookTitle'];
+   echo $row['OriginalTitle'];
+    ?>
+ <img src="<?php //echo $row['Cover']; ?>"/>
+
+
+ <?php //endforeach; ?>
+
+  <br>
+  </div>

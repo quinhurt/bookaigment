@@ -1,5 +1,5 @@
 <?php
-include "control/DB.php";
+
 include "view/header.php";
  ?>
 

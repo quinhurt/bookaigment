@@ -12,8 +12,8 @@ background-color:yellow;
 .book{
 display: flex;
 flex-wrap: nowrap;
-width: 500px;
+width: 20%;
 height: 300px;
-background-color: red;
+background-color: blue;
 margin-left:3em;
 }
