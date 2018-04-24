@@ -3,7 +3,7 @@
        <div class="sampleFormBox">
           <fieldset>
             <legend>Admin login</legend>
-         <form action="control\register_process.php"  method="post">
+         <form action="modle\loginprocess.php"  method="post">
            <label>Username:</label>
            <input type="text" name=username required>
            <label>Password:</label>

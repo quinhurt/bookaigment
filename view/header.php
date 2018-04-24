@@ -16,7 +16,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css"/>
 
-<link rel="stylesheet" href="modle\style.css">
+<link rel="stylesheet" href="..\modle\main1.css">
   </head>
   <body>
 

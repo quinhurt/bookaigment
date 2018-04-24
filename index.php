@@ -7,7 +7,9 @@ include "view/header.php";
 
  <?php
 
- include "view/body.php";
+ include "view/login.php";
+
+ include "view/register.php";
 
   ?>
 

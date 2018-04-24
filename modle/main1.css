@@ -1,0 +1,45 @@
+.header{
+  height: 10em;
+  background-color: blue;
+}
+
+footer{
+height:10em;
+background-color:yellow;
+
+}
+
+.book{
+display: flex;
+flex-wrap: nowrap;
+width: 20%;
+height: 300px;
+background-color: blue;
+margin-left:3em;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  background-color:#aaff2a;
+  width:100%;
+}
+
+.flex > div{
+  text-align: center;
+  line-height:20px;
+  font-size: 20px;
+  width: 10em;
+  margin-left: 5em;
+  padding-bottom: 3em;
+
+}
+.nav{
+
+  height:5em;
+  background-color: green;
+
+}
+.input{
+width: 20%;
+
+}
