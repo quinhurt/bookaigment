@@ -25,7 +25,7 @@ while ($row = $stmt->fetch())
 <div >
 
 <?php
-      echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['cover'] ).'"/>';
+      echo '<img class"pic" src="data:image/jpeg;base64,'.base64_encode( $row['cover'] ).'"/>';
 
        echo "$BookTitle";
 ?> <br>

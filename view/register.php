@@ -1,11 +1,15 @@
 
-<?php   ////register new admin ////  ?>
+<?php   ////register new admin ////
+
+include "header.php";
+ ?>
 
 
 
 <section class="flex-item-section">
      <article>
-       <div class="sampleFormBox">
+
+       <div class="flex">
           <fieldset>
             <legend>Admin Registration</legend>
          <form action="modle\register.php"  method="post">
