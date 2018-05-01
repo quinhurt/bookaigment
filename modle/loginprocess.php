@@ -1,4 +1,7 @@
 <?php
+///// loging in ////
+
+
 include "DB.php";
 
 
@@ -14,6 +17,24 @@ if($stmt->rowcount() == 0) {
   $_SESSION['error'] = "Login invalid please try again";
 
       } else {
-          header('Location: ../view/book.php');
+
+          header('Location: ../view/main.php');
     }
+
+
+
+
+ ?>
+ <?php
+ switch($_SESSION['roll']) {
+   case '1':
+         include 'view/adminnav.php';
+     break;
+ case '2':
+         include 'book.php';
+     break;
+ default:
+   header ('location: ../index.php');
+ break;
+  }
  ?>

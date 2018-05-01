@@ -1,4 +1,7 @@
 <?php
+
+//// neww book////
+
 include "DB.php";
 
 $conn = dbConnect();
@@ -15,4 +18,17 @@ $stmt = $conn->prepare($sql);
 
 
 
+ ?>
+ <?php
+ switch($_SESSION['roll']) {
+   case '1':
+         include 'view/adminnav.php';
+     break;
+ case '2':
+         include 'book.php';
+     break;
+ default:
+   header ('location: ../index.php');
+ break;
+  }
  ?>

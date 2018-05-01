@@ -1,3 +1,8 @@
+
+<?php   ////register new admin ////  ?>
+
+
+
 <section class="flex-item-section">
      <article>
        <div class="sampleFormBox">

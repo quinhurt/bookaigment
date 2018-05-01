@@ -1,4 +1,7 @@
 <?php
+
+///new book////
+
 include "DB.php";
 
 
@@ -23,12 +26,22 @@ INSERT INTO bookplot
 VALUES (`BookPlotID`, '".$_POST['plot']."', '".$_POST['plotsource']."', LAST_INSERT_ID(@lastb));";
 $stmt = $conn->prepare($sql);
         $stmt->execute();
-
+header('location: ../view/main.php');
 
 }
 }
 
  ?>
  <?php
-
+ switch($_SESSION['roll']) {
+   case '1':
+         include 'view/adminnav.php';
+     break;
+ case '2':
+         include 'book.php';
+     break;
+ default:
+   header ('location: ../index.php');
+ break;
+  }
  ?>

@@ -1,3 +1,7 @@
+
+
+<?php  ////update a book /// ?>
+
 <?php
 include "header.php";
  ?>
@@ -8,7 +12,7 @@ include '../modle/DB.php';
 
 $conn = dbConnect();
 $contentquery = "SELECT BookID, BookTitle, OriginalTitle, YearofPublication, Genre, MillionsSold, LanguageWritten, AuthorID
-FROM book WHERE BookID=" .$_GET['BookID'] ;
+FROM book WHERE BookID=" .$_GET['BookID'];
 $stmt = $conn->prepare($contentquery);
 $stmt->execute();
 while ($row = $stmt->fetch()){
@@ -27,19 +31,19 @@ $AuthorID = $row['AuthorID'];
 
 <div>
 <?php
-echo "<form action='../modle/upadteprocess.php' method='post'>";
-echo "<input class='input' type='text'  value='.$BookTitle.'>";
-echo "<input class='input' type='text'  value='.$OriginalTitle.'>";
-echo "<input class='input' type='text'  value='.$YearofPublication.'>";
-echo "<input class='input' type='text'  value='.$Genre.'>";
-echo "<input class='input' type='text'  value='.$MillionSold.'>";
-echo "<input class='input' type='text'  value='.$LanguageWritten.'>";
-
+echo '<form action="../modle/updateprocess.php?BookID='.$BookID.'" method="post">';
+echo '<input class="input" type="text" name="BookTitle" value="'.$BookTitle.'">';
+echo '<input class="input" type="text" name="OriginalTitle"  value="'.$OriginalTitle.'">';
+echo '<input class="input" type="text" name="YearofPublication"  value="'.$YearofPublication.'">';
+echo '<input class="input" type="text" name="Genre"  value="'.$Genre.'">';
+echo '<input class="input" type="text" name="MillionSold"  value="'.$MillionSold.'">';
+echo '<input class="input" type="text" name="LanguageWritten"  value="'.$LanguageWritten.'">';
+echo ' <input type="submit" name="updat">';
  ?>
-
-
-
  </div>
+
+
+
 
 </form>
 </div>

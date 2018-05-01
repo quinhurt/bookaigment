@@ -1,6 +1,12 @@
+<?php include "header.php";
 
-<?php  ////   display for a admin////   ?>
+?>
 
+<nav class="nav">
+  <a href="new.php" class="a">new book</a>
+  <a href="register.php" class="a">new admin</a>
+  <a >logout</a>
+</nav>
 
 <div class="flex">
 
@@ -16,7 +22,7 @@ while ($row = $stmt->fetch())
        $BookTitle = $row['BookTitle'];
        $cover  =$row['cover'];
 ?>
-<div>
+<div >
 
 <?php
       echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['cover'] ).'"/>';
@@ -31,3 +37,21 @@ while ($row = $stmt->fetch())
 <?php  }?>
 
 </div>
+<?php
+include "footer.php";
+ ?>
+
+
+
+
+ switch($_SESSION['roll']) {
+   case '1':
+         include 'view/adminnav.php';
+     break;
+ case '2':
+         include 'book.php';
+     break;
+ //default:
+   //header ('location: ../index.php');
+ break;
+  }

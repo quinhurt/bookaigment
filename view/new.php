@@ -1,5 +1,6 @@
-
-
+ <?php
+///// new book and author ///
+  ?>
 
 <form class="" action="../modle/newbook.php" method="post"  enctype="multipart/form-data">
   <div class="flex">

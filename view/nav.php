@@ -1,4 +1,6 @@
 
 <nav class="nav">
-<a href="new.php">new book</a>
+
+<a id="myBtn" >logim</a>
+
 </nav>
