@@ -16,26 +16,38 @@ height: 300px;
 background-color: blue;
 margin-left:3em;
 }
+.as{
+padding-left: 2%;
+color:red;
+}
 
 .flex {
   display: flex;
   flex-wrap: wrap;
   background-color:#aaff2a;
   width:100%;
+  padding-left: 2em;
 }
 .color{
 background-color: #aaff2a;
+width: 100%;
 
 }
+.block{
+  width: 80%;
+}
+
 
 .flex > div{
   text-align: center;
   line-height:20px;
   font-size: 20px;
   width: 10em;
-  margin-left: 5em;
+  padding-left: 2em;
   padding-bottom: 3em;
+  margin: 5%;
 }
+
 .nav{
   height:5em;
   background-color: green;
@@ -53,7 +65,7 @@ float:right;
 }
 /* The Modal (background) */
 .modal {
-    display: none; 
+    display: none;
     position: fixed;
     z-index: 1;
     padding-top: 100px;
@@ -86,6 +98,8 @@ float:right;
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}
 }
+
+
 
 @keyframes animatetop {
     from {top:-300px; opacity:0}
@@ -121,4 +135,8 @@ padding: 2%;
 
 .pic{
   width:20%;
+}
+
+.div{
+  width: 15%;
 }

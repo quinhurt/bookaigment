@@ -9,6 +9,7 @@
       </div>
 </div><?php
 ?>
+<div class="color">
 
 <div class="flex">
 
@@ -24,22 +25,19 @@ while ($row = $stmt->fetch())
        $BookTitle = $row['BookTitle'];
        $cover  =$row['cover'];
 ?>
-<div >
 
+<div >
 <?php
       echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['cover'] ).'"/>';
-
        echo "$BookTitle";
 ?> <br>
-
-
 </div>
 
 <?php  }?>
 
 
 </div>
-
+</div>
 
 
 

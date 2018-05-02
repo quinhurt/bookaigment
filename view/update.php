@@ -31,18 +31,17 @@ $AuthorID = $row['AuthorID'];
 
 <div>
 <?php
-echo '<form action="../modle/updateprocess.php?BookID='.$BookID.'" method="post">';
-echo '<input class="input" type="text" name="BookTitle" value="'.$BookTitle.'">';
-echo '<input class="input" type="text" name="OriginalTitle"  value="'.$OriginalTitle.'">';
-echo '<input class="input" type="text" name="YearofPublication"  value="'.$YearofPublication.'">';
-echo '<input class="input" type="text" name="Genre"  value="'.$Genre.'">';
-echo '<input class="input" type="text" name="MillionSold"  value="'.$MillionSold.'">';
-echo '<input class="input" type="text" name="LanguageWritten"  value="'.$LanguageWritten.'">';
-echo ' <input type="submit" name="updat">';
+echo '<form action="../modle/updateprocess.php?BookID='.$BookID.'" method="post">';?><br><?php
+echo '<input class="form-control" type="text" name="BookTitle" value="'.$BookTitle.'">';?><br><?php
+echo '<input class="form-control" type="text" name="OriginalTitle"  value="'.$OriginalTitle.'">';?><br><?php
+echo '<input class="form-control" type="text" name="YearofPublication"  value="'.$YearofPublication.'">';?><br><?php
+echo '<input class="form-control" type="text" name="Genre"  value="'.$Genre.'">';?><br><?php
+echo '<input class="form-control" type="text" name="MillionSold"  value="'.$MillionSold.'">';?><br><?php
+echo '<input class="form-control" type="text" name="LanguageWritten"  value="'.$LanguageWritten.'">';?><br><?php
+echo ' <input class="form-control" type="submit" name="updat">';
  ?>
+
  </div>
-
-
 
 
 </form>

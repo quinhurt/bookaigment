@@ -5,30 +5,14 @@
 include "DB.php";
 
 $conn = dbConnect();
-$sql = "INSERT INTO login
-VALUES ( 'loginID'  ,'".$_POST['username']."' , '".$_POST['password']."');
-SET @lastw = LAST_INSERT_ID();
-INSERT INTO admin
-VALUES ('adminID', '".$_POST['name']."', '".$_POST['surname']."', '2' , LAST_INSERT_ID(@lastw));";
+$password = password_hash(':password', PASSWORD_DEFAULT);
+$sql = "INSERT INTO admin
+VALUES ('adminID', '".$_POST['name']."', '".$_POST['surname']."', '".$_POST['username']."' , '".$_POST['password']."' , '2' );";
 $stmt = $conn->prepare($sql);
-        $stmt->execute();
+$stmt->bindParam(':name', $name);
+$stmt->bindParam(':surname', $surename );
+$stmt->bindParam(':username', $username);
+$stmt->bindParam(':password', $password);
+$stmt->execute();
 
-
-
-
-
-
- ?>
- <?php
- switch($_SESSION['roll']) {
-   case '1':
-         include 'view/adminnav.php';
-     break;
- case '2':
-         include 'book.php';
-     break;
- default:
-   header ('location: ../index.php');
- break;
-  }
  ?>

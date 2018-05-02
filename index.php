@@ -1,11 +1,15 @@
 <?php
+include 'view/header.php';
 
-include "view/header.php";
  ?>
 
 
 <?php
- include "view/home.php";
+
+ include 'view/home.php';
+
+
+
 
   ?>
 

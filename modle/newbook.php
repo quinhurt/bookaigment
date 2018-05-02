@@ -25,6 +25,19 @@ VALUES ('bookrankingID', '".$_POST['bookranking']."', LAST_INSERT_ID(@lastb));
 INSERT INTO bookplot
 VALUES (`BookPlotID`, '".$_POST['plot']."', '".$_POST['plotsource']."', LAST_INSERT_ID(@lastb));";
 $stmt = $conn->prepare($sql);
+$stmt->bindParam(':Name', $Name);
+$stmt->bindParam(':Surname', $Surname);
+$stmt->bindParam(':nationality', $nationality);
+$stmt->bindParam(':birthYear', $birthYear);
+$stmt->bindParam(':Deathyear', $Deathyear);
+$stmt->bindParam(':BookTitle', $Booktitle);
+$stmt->bindParam(':originalTitle', $orginalTitle);
+$stmt->bindParam(':yearofpublication', $yearofpublication);
+$stmt->bindParam(':genre', $genre);
+$stmt->bindParam(':millonsSold', $millonSold);
+$stmt->bindParam(':bookranking', $bookranking);
+$stmt->bindParam(':plot', $plot);
+$stmt->bindParam(':plotsource', $plotsource);
         $stmt->execute();
 header('location: ../view/main.php');
 
