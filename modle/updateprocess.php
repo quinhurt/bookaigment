@@ -12,7 +12,7 @@ Genre = '".$_POST['Genre']."', MillionsSold = '".$_POST['MillionSold']."', Langu
  WHERE BookID = ". $_GET['BookID'];
  $stmt = $conn->prepare($sql);
  $stmt->execute();
-header('location: ../view/main.php');
+header('location: ../index.php');
 
  echo "done";
  ?>

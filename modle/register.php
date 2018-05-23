@@ -23,7 +23,7 @@ $sql = "INSERT INTO admin
     VALUES ('adminID', '$name', 'surename', 'username' , '$password2' , '2' );";
   $stmt = $conn->prepare($sql);
   $stmt->execute();
-header('location: ../view/main.php');
+header('location: ../index.php');
 
 try
 {

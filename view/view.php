@@ -9,7 +9,6 @@
 
 <div class="color">
 
-
 <div class="flex">
 <?php
 include 'modle/DB.php';
@@ -32,8 +31,8 @@ while ($row = $stmt->fetch())
        echo "$BookTitle";
 ?> <br>
 
-<a href='update.php?BookID=<?php echo $BookID;?>'>Edit</a><br>
-<a href='../modle/delete.php?BookID=<?php echo $BookID;?>'>Delete</a><br>
+<a href='view/update.php?BookID=<?php echo $BookID;?>'>Edit</a><br>
+<a href='modle/delete.php?BookID=<?php echo $BookID;?>'>Delete</a><br>
 
 </div>
 

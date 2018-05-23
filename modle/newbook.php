@@ -49,7 +49,7 @@ $stmt->bindParam(':bookranking', $bookranking);
 $stmt->bindParam(':plot', $plot);
 $stmt->bindParam(':plotsource', $plotsource);
         $stmt->execute();
-header('location: ../view/main.php');
+header('location: ../index.php');
 
 }
 }
