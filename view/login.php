@@ -1,13 +1,13 @@
 <section class="flex-item-section">
      <article>
        <div class="sampleFormBox">
-          <fieldset>
+          <fieldset class="col-xs-1" align="center">
             <legend>Admin login</legend>
          <form action="modle\loginprocess.php"  method="post">
            <label>Username:</label>
            <input type="text" name=username required>
            <label>Password:</label>
-           <input type="text" name=password required>
+           <input type="password" name=password required>
             <input type="hidden" name="action_type" value="add"/>
            <input type="submit">
          </form>

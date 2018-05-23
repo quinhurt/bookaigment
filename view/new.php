@@ -10,6 +10,8 @@ include "header.php";
 <div class="color">
 
 
+
+
 <div class="block">
 
 
@@ -40,5 +42,6 @@ include "header.php";
   <br>
   <input type="submit" name="submit" placeholder="submit" >
 </form>
+
 </div>
 </div>

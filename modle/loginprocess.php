@@ -1,5 +1,6 @@
 <?php
     include 'DB.php';
+    include 'session.php';
 
     $login_sql = "SELECT * FROM admin WHERE username = '" . $_POST['username'] . "' AND password = '" .
                   $_POST['password'] . "';";
@@ -14,9 +15,11 @@
 
 
     } else {
-        $_SESSION['adminID'] = $result['adminID'];
-        $_SESSION['roll'] = $result['roll'];
-        header('Location: ../view/main.php');
-        $_SESSION['login'] = "login successful";
+
+      $_SESSION['adminID'] = $result['adminID'];
+      $_SESSION['roll'] = $result['roll'];
+      $_SESSION['message'] = "Login successful";
+      header('Location: ../index.php?');
+      $_SESSION['login'] = "login successful";
   }
 ?>

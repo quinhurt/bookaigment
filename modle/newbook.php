@@ -3,6 +3,16 @@
 ///new book////
 
 include "DB.php";
+/*
+
+}
+
+*/
+
+
+
+
+
 
 
 if(isset($_POST["submit"])){
@@ -44,17 +54,4 @@ header('location: ../view/main.php');
 }
 }
 
- ?>
- <?php
- switch($_SESSION['roll']) {
-   case '1':
-         include 'view/adminnav.php';
-     break;
- case '2':
-         include 'book.php';
-     break;
- default:
-   header ('location: ../index.php');
- break;
-  }
  ?>

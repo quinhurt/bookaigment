@@ -25,7 +25,9 @@ while ($row = $stmt->fetch())
 ?> <br>
 
 <a href='update.php?BookID=<?php echo $BookID;?>'>Edit</a><br>
-<a href='../modle/delete.php?BookID=<?php echo $BookID;?>'>delete</a><br>
+
+
+<a href='../modle/delete.php?BookID=<?php echo $BookID;?>'>Delete</a><br>
 </div>
 
 <?php  }?>

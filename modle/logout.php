@@ -3,6 +3,6 @@
 //	lot out
     unset($_SESSION['adminID']);
     unset($_SESSION['roll'] );
-    $_SESSION['UserStatus'] = 0;
+    $_SESSION['roll'] = 0;
     header('Location: ../index.php');
 ?>

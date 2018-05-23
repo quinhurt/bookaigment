@@ -1,21 +1,13 @@
-.header{
-  height: 10em;
-  background-color: blue;
-}
-
-footer{
-height:10em;
-background-color:yellow;
-}
 
 .book{
 display: flex;
 flex-wrap: nowrap;
 width: 20%;
 height: 300px;
-background-color: blue;
+background-color:white;
 margin-left:3em;
 }
+
 .as{
 padding-left: 2%;
 color:red;
@@ -24,45 +16,44 @@ color:red;
 .flex {
   display: flex;
   flex-wrap: wrap;
-  background-color:#aaff2a;
+  background-color:#eeeeee;
   width:100%;
-  padding-left: 2em;
+
 }
 .color{
-background-color: #aaff2a;
+background-color: #eeeeee;
 width: 100%;
-
 }
 .block{
   width: 80%;
+  margin: 10%;
 }
 
 
 .flex > div{
   text-align: center;
-  line-height:20px;
   font-size: 20px;
   width: 10em;
-  padding-left: 2em;
-  padding-bottom: 3em;
-  margin: 5%;
+  padding: 1em;
+  margin: 3%;
 }
 
 .nav{
   height:5em;
-  background-color: green;
+  background-color:white;
+  margin-top:3%;
+  width: 100%;
 }
 
-.input{
-width:15em;
-margin-left:50%;
-margin-top: 2em;
 
+.float{
+display: flex;
+align-items:flex-end;
+align-content:flex-end;
+width: 250px;
 }
-.right{
-float:right;
 
-}
+
 /* The Modal (background) */
 .modal {
     display: none;
@@ -139,4 +130,10 @@ padding: 2%;
 
 .div{
   width: 15%;
+}
+
+.line{
+  height: 0.5em;
+  width: 100%;
+  background-color:black;
 }
